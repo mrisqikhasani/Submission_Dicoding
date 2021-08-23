@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak Buku Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rak Buku Apps </h1>
+    </header> 
+    <section class="input_section">
+        <h2>Input Buku</h2>
+        <form id="inputBuku">
+            <div class="input">
+                <label for="inputJudul">Judul</label>
+                <input id="inputJudul" name="judul" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputPenulis">Penulis</label>
+                <input id="inputPenulis" name="penulis" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputTahun">Tahun</label>
+                <input id="inputTahun" name="tahun" type="number" required>
+            </div>
+            <div class="input_inline">
+                <label for="inputSelesai">Selesai Dibaca</label>
+                <input id="inputSelesai" type="checkbox">
+            </div>
+            <button id="submitBuku" type="submit">Masukan buku ke rak <span>Belum Selesai Baca</span></button>
+        </form>
+    </section>
+    <br>
+    <section class="search_section">
+        <h2>Cari Buku</h2>
+        <form id="cariBuku">
+            <label for="cariJudulBuku">Judul</label>
+            <input id="cariJudulBuku" type="text">
+            <button id="submitCari">Cari</button>
+        </form>
+    </section>
+
+    <br>
+    <section class="rak_buku">
+        <h2>Belum Selesai dibaca </h2>
+        <div id="incompleteBookshelfList" class="book_list">
+
+        </div>
+    </section>
+
+    <section class="rak_buku">
+        <h2>Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book_list">
+
+        </div>
+    </section>
+
+    </div>
+    <footer>
+        <div>
+            <p>M Risqi Khasani 2021</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
