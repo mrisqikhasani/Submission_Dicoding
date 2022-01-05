@@ -1,0 +1,266 @@
+/* tiny reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* body */
+body {
+  background: #4d244e;
+  font-family: sans-serif;
+  border-top: 5px solid #4d244e;
+}
+
+header {
+  background-color: #aa8e8d;
+  padding: 4px;
+  transition: padding 0.5s ease-in-out;
+}
+
+/* title */
+h1 {
+  color: #4d244e;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  max-height: 700px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  background-color: #ae5f75;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input_section label {
+  height: 690px;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.input_section h2 {
+  text-align: center;
+  color: #f6bd66;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.input_section button:hover {
+  background-color: #d37b79;
+  color: #fff;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section .input input {
+  display: block;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.input_section > form > .input > label {
+  color: #f6bd66;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input_inline {
+  margin: 12px 0;
+  display: block;
+  align-items: center;
+}
+
+.input_inline label {
+  color: #f6bd66;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input_inline input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+.input_section button {
+  background-color: #6d335c;
+  box-shadow: 5px 5px 8px 5px rgb(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  border-radius: 15px;
+  padding: 8px;
+  margin: 12px;
+  width: 97%;
+  cursor: pointer;
+  transition: padding 0.7s ease-in-out;
+}
+
+/*search_section */
+.search_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 15px auto;
+  max-width: 500px;
+  max-height: 700px;
+  width: 80%;
+  height: 80%;
+  background-color: #ae5f75;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 5px 5px 8px 5px rgb(0, 0, 0, 0.5);
+}
+
+.search_section h2 {
+  color: #f6bd66;
+  text-align: center;
+}
+
+.search_section form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section label {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #f6bd66;
+}
+
+.search_section input {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  margin: 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.search_section button {
+  margin: 5px;
+  margin-right: 15px;
+  background-color: #6d335c;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 6px 6px 8px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.search_section button:hover {
+  background-color: #d37b79;
+  color: #fff;
+}
+
+/*rak_buku */
+.rak_buku {
+  position: relative;
+  max-width: 500px;
+  width: 80%;
+  left: 0px;
+  right: 0px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px wheat solid;
+  border-radius: 5px;
+}
+
+.rak_buku .book_item {
+  background: #ae5f75;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2c3e50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  transition: all 0.7s ease;
+  padding: 15px;
+  margin: 8px 0 0 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 5px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.rak_buku > h2 {
+  color: wheat;
+}
+
+.book_item h3 {
+  display: flex;
+  font-size: 20px;
+  color: rgb(65, 65, 65);
+  font-weight: 800;
+}
+
+.book_item h4 {
+  font-size: 16px;
+  color: wheat;
+}
+
+.book_item p {
+  display: flex;
+  font-size: 14px;
+
+  font-weight: normal;
+  color: #fff;
+}
+
+.book_item button {
+  border: 0;
+  border-radius: 6px;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+}
+
+.book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
+
+footer {
+  background-color: #aa8e8d;
+  text-align: center;
+  padding: 6px;
+}
+
+footer > div > p {
+  color: #4d244e;
+  font-size: 20px;
+  font-weight: bold;
+}
